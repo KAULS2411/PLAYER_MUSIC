@@ -1,0 +1,105 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+ background: linear-gradient(-20deg, #cfcfcf, #818181,#303030, #000000);
+ animation: animation 10s ease infinite;
+ background-size: 300%;
+ color: rgb(249, 249, 248);
+ font-family: 'Neuton', serif;
+}
+
+@keyframes animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+ img {
+    
+    width: 300px;
+    height: 300px;
+    border-radius: 7px;
+}
+
+.descrição {
+    width: 300px;
+
+}
+
+.h2 {
+    margin-bottom: 5px;
+
+}
+
+.duração{
+    width: 300px;
+    margin-top: 25px;
+}
+
+.barra {
+    width: 300px;
+    height: 6px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+progress {
+    height: 6px;
+    width: 50%;
+    background-color: 333;
+}
+
+.ponto {
+    width: 12px;
+    height: 12px;
+    background-color: aliceblue;
+    border-radius: 100%;
+    margin-left: -2px;
+}
+
+.tempo{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.Player{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.botao-play , .botao-pause{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.setas {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.botao-pause{
+    display: none;
+}
